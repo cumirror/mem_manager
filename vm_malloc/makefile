@@ -4,11 +4,11 @@ test: test.o memlib.o mm.o
 test.o: test.c
 	gcc -c test.c
 
-mm.o: vm_malloc/mm.c
-	gcc -c vm_malloc/mm.c
+mm.o: mm.c
+	gcc -c mm.c
 
-memlib.o: vm_malloc/memlib.c
-	gcc -c vm_malloc/memlib.c
+memlib.o: memlib.c
+	gcc -c memlib.c
 
 clean:
 	-rm test *.o
